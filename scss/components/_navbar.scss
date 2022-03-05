@@ -1,0 +1,58 @@
+.navbar {
+    display: grid;
+    position: sticky;
+    grid-template-columns: 1fr 1fr 3fr;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 60px;
+    background: red;
+
+
+    &--nav{
+       display: inline-block;
+       width: 100%;
+       height: 60px;
+       background: blue; 
+       aspect-ratio: 1;
+    }
+
+    &--logo {
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        background: green; 
+    
+        
+    }
+
+    &--contact {
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        background: purple; 
+     
+    }
+} 
+
+// #menu {
+//     user-select: none;
+//     display: inline-block;
+// }
+
+// #dropdown {
+//     display: none;
+//     position: relative;
+//     background-color: purple;
+//     width: 10vw;
+// }
+
+// #menu:focus {
+//     pointer-events: none;
+// }
+
+// #menu:focus #dropdown {
+//     display:block;
+// }
+
+//you need to have a tabindex=0 in the div holding whtaever the focus selector is
