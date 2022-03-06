@@ -1,36 +1,115 @@
 .navbar {
     display: grid;
-    position: sticky;
-    grid-template-columns: 1fr 1fr 3fr;
+    position: fixed;
+    grid-template-columns: 100px 120px 3fr;
     top: 0;
     left: 0;
     width: 100vw; 
-    height: 60px;
-    background: red;
+    height: 100px;
+    background-color: #dba24a;
 
+    &__checkbox{ 
+        display: none;
+    }
+
+    &__button {
+        
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2000;
+    }
 
     &--nav{
+        
        display: inline-block;
        width: 100%;
-       height: 60px;
+       height: 100px;
        background: blue; 
        aspect-ratio: 1;
     }
 
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: #0f0f0f;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
     &--logo {
+        position: relative;
         display: inline-block;
-        width: 100%;
-        height: 60px;
-        background: green; 
-    
+      
+       
+        background-image: url(../../assets/opplogo.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+       
+        
         
     }
 
     &--contact {
-        display: inline-block;
+        position: relative;
+    
         width: 100%;
-        height: 60px;
-        background: purple; 
+       
+        text-align: center;
+        
+        &-info {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-right: 20px;
+            color: white;
+            
+            &-phone {
+                text-decoration: none;
+                font-weight: bolder;
+                color: white;
+            }
+        }
      
     }
 } 

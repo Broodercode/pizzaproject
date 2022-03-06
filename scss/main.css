@@ -274,40 +274,239 @@
           transform: translateX(-50%);
 }
 
+.menu__hero {
+  width: 100vw;
+  height: 300px;
+  background-image: url(/assets/pizza01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__quoteblock {
+  position: relative;
+  background-color: green;
+  padding: 10px;
+}
+
+.menu__quoteblock-quote {
+  padding-left: 20px;
+}
+
+.menu__actual--dropdown {
+  background-color: aqua;
+}
+
+.menu__actual--dropdown-input {
+  position: relative;
+}
+
+.menu__actual--dropdown-input input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  visibility: none;
+  cursor: pointer;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
+}
+
+.menu__actual--dropdown-input input ~ ul {
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu__actual--dropdown-type1 {
+  background-color: #dba24a;
+  padding: 10px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.menu__actual--dropdown-type2 {
+  background-color: #e12301;
+  padding: 10px;
+}
+
+.menu__actual--dropdown-items {
+  display: block;
+  position: relative;
+  height: 500px;
+}
+
+.menu__actual--dropdown-items-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+}
+
+#appetizerID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+
+#appetizerID:checked ~ .appbox {
+  position: absolute;
+  height: 0%;
+}
+
+#appetizerID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+
+#appetizerID:not(:checked) ~ .appbox {
+  position: absolute;
+  height: 100%;
+  background-color: aqua;
+}
+
+#mainID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+
+#mainID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+
+#dessertsID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+
+#dessertsID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+
+#drinksID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+
+#drinksID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+
 .navbar {
   display: -ms-grid;
   display: grid;
-  position: -webkit-sticky;
-  position: sticky;
-  -ms-grid-columns: 1fr 1fr 3fr;
-      grid-template-columns: 1fr 1fr 3fr;
+  position: fixed;
+  -ms-grid-columns: 100px 120px 3fr;
+      grid-template-columns: 100px 120px 3fr;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 60px;
-  background: red;
+  height: 100px;
+  background-color: #dba24a;
+}
+
+.navbar__checkbox {
+  display: none;
+}
+
+.navbar__button {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2000;
 }
 
 .navbar--nav {
   display: inline-block;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background: blue;
   aspect-ratio: 1;
 }
 
-.navbar--logo {
+.navbar__icon {
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+.navbar__icon, .navbar__icon::before, .navbar__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #0f0f0f;
   display: inline-block;
-  width: 100%;
-  height: 60px;
-  background: green;
+}
+
+.navbar__icon::before, .navbar__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.navbar__icon::before {
+  top: -.8rem;
+}
+
+.navbar__icon::after {
+  top: .8rem;
+}
+
+.navbar__button:hover .navbar__icon::before {
+  top: -1rem;
+}
+
+.navbar__button:hover .navbar__icon::after {
+  top: 1rem;
+}
+
+.navbar__checkbox:checked + .navbar__button .navbar__icon {
+  background-color: transparent;
+}
+
+.navbar__checkbox:checked + .navbar__button .navbar__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navbar__checkbox:checked + .navbar__button .navbar__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.navbar--logo {
+  position: relative;
+  display: inline-block;
+  background-image: url(../../assets/opplogo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar--contact {
-  display: inline-block;
+  position: relative;
   width: 100%;
-  height: 60px;
-  background: purple;
+  text-align: center;
+}
+
+.navbar--contact-info {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-right: 20px;
+  color: white;
+}
+
+.navbar--contact-info-phone {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
 }
 
 .location {

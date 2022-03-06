@@ -1,0 +1,138 @@
+.menu {
+  &__hero {
+    width: 100vw;
+    height: 300px;
+    background-image: url(/assets/pizza01.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  &__quoteblock {
+      position: relative;
+
+      background-color: green;
+      padding: 10px;
+      
+    &-title {
+    
+    
+    }
+
+    &-quote {
+       padding-left: 20px;
+    }
+  }
+
+  &__actual {
+
+  
+    
+    &--dropdown {
+      background-color: aqua;
+    
+    
+      &-input {
+        position: relative;
+       
+        input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+
+          z-index: 1;
+         visibility: none;;
+          cursor: pointer;
+          transition: height 1s ease-out ;
+     
+
+          & ~ul {
+            height: 100%;
+            overflow: hidden;
+            
+          }
+        }
+      }
+      &-type1 {
+        background-color: #dba24a;
+        padding: 10px;
+        
+            transition: all 1s ease-out;
+           
+      }
+      &-type2 {
+        background-color: #e12301;
+        padding: 10px;
+      }
+
+      &-items {
+          display: block;
+        position: relative;
+     
+        height: 500px;
+
+        li {}
+        
+        &-img {
+            position: absolute;
+           
+            right:0;
+            bottom: 0;
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+        }
+      }
+
+   
+    }
+  }
+}
+
+#appetizerID:checked {
+    ~ul {
+        position: absolute;
+        height: 0%;
+        
+    }
+
+    ~.appbox {
+        position: absolute;
+        height: 0%;
+    }
+
+ 
+}
+#appetizerID:not(:checked) {
+  position: absolute;
+  height: 100%;
+  ~.appbox {
+    position: absolute;
+    height: 100%;
+    background-color: aqua;
+}
+}
+#mainID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+#mainID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+#dessertsID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+#dessertsID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
+#drinksID:checked ~ ul {
+  position: absolute;
+  height: 0%;
+}
+#drinksID:not(:checked) {
+  position: absolute;
+  height: 100%;
+}
