@@ -14,32 +14,40 @@
 
 
 .hero {
+    display: block;
+    position: relative;
     width: 100vw;
-    height: 300px;
-    background-image: url(/assets/pizza01.jpg);
+    height: 500px;
+    background-image: url(/assets/hero-small-pranjall-kumar.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-attachment: fixed;
+    
 }
 
 .main {
     &--promo {
-        display: block;
+        display: sticky;
         width: 100vw;
         height: auto;
         padding-bottom: 10px;
-        background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+        background: linear-gradient(-45deg, $color-orange, $color-orange-dark, $color-yellow, $color-red);
         background-size: 400% 400%;
         animation: gradient 60s ease infinite;
+        box-shadow: 3px 3px 2px 1px rgba($color-black, .2);
     }
 
     &--header {
         display: block;
         padding-bottom: 20px;
         background: linear-gradient(-180deg, rgba(#fff, 0), rgba(#fff, 0.4), rgba(#fff, 0.6), rgba(#fff, 0.6), rgba(#fff, 0.4), rgba(#fff, 0));
-        color: #1f1f1f;
+      
         &_text{
             padding-top: 20px;
             text-align: center;
+            color: $color-black;  
+            font-size: xx-large;
+            font-family: 'Pacifico';
            
         }
 
@@ -56,7 +64,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(150px, 1fr);
         padding-bottom: 10px;
-
+    
         
         &-img {
             display: inline-block;
@@ -65,7 +73,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     
-        border: 2px solid black;
+        border: 2px solid $color-black;
         border-radius: 5px;
         margin-left: 10px;
         }
@@ -80,18 +88,19 @@
              left: 50%;
              top:50%;
              transform: translate(-50%, -50%);
-             box-shadow: 3px 3px 2px 1px rgba(black, .2);
-             background-color: rgba(black, .6);
+             box-shadow: 3px 3px 2px 1px rgba($color-black, .2);
+             background-color: rgba($color-black, .6);
+             z-index: 0;
 
              &-header {
                  margin: 5px 0 0 15px;
-                 color: #f1f1f1;
+                 color: $color-white;
              }
 
              &-text {
                  margin: 3px 0 0 6px;
                  font-size: 14px;
-                 color: #f1f1f1;
+                 color: $color-white;
              }
         }
     }
@@ -106,7 +115,7 @@
             grid-column: 3/3;
         background-repeat: no-repeat;
         background-size: cover;
-        border: 2px solid black;
+        border: 2px solid $color-black;
         border-radius: 5px;
         margin-right: 10px;
       
@@ -121,29 +130,30 @@
              left: 50%;
              top:50%;
              transform: translate(-50%, -50%);
-             box-shadow: 3px 3px 2px 1px rgba(black, .2);
-             background-color: rgba(black, .6);
+             box-shadow: 3px 3px 2px 1px rgba($color-black, .2);
+             background-color: rgba($color-black, .6);
              border-radius: 3px;
 
              &-header {
                  margin: 5px 0 0 15px;
-                 color: #f1f1f1;
+                 color: $color-white;
            
              }
 
              &-text {
                  margin: 3px 0 0 6px;
                  font-size: 14px;
-                 color: #f1f1f1;
+                 color: $color-white;
              }
         }
     }
 }
 
 .cardnav {
-    background-image: url(/assets/pizza05.jpg);
+    background-image: url(/assets/home-pizza-menu.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 80vw;
     &_card {
     position: relative;
@@ -151,9 +161,9 @@
     top: 50%;
     height: 150px;
     width: 55vw;
-    background-color: red;
+    background-color: $color-red;
     transform: translateY(-50%);
-    box-shadow: 5px 5px 2px 1px rgba(black, .2);
+    box-shadow: 5px 5px 2px 1px rgba($color-black, .2);
     &--list{
         position: relative;
         top: 50%;
@@ -162,7 +172,7 @@
         &-item {
             padding: 5px 0 5px 8px;
             a {
-                color: white;
+                color: $color-white;
                 text-decoration: none;
               
             }

@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'roboto';
 } 
 
+@import "./variables/variables";
+
+//pages
 @import "./pages/home";
 @import "./pages/about";
 @import "./pages/menu";
 @import "./components/navbar";
 @import "./components/location";
+@import "./components/footer";

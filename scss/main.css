@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: 'roboto';
 }
 
 @-webkit-keyframes gradient {
@@ -28,22 +31,27 @@
 }
 
 .hero {
+  display: block;
+  position: relative;
   width: 100vw;
-  height: 300px;
-  background-image: url(/assets/pizza01.jpg);
-  background-repeat: no-repeat;
+  height: 500px;
+  background-image: url(/assets/hero-small-pranjall-kumar.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .main--promo {
-  display: block;
+  display: sticky;
   width: 100vw;
   height: auto;
   padding-bottom: 10px;
-  background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+  background: linear-gradient(-45deg, #dba24a, #e12301, #FFFa8a, #ce0000);
   background-size: 400% 400%;
   -webkit-animation: gradient 60s ease infinite;
           animation: gradient 60s ease infinite;
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
 }
 
 .main--header {
@@ -51,12 +59,14 @@
   padding-bottom: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.4)), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
-  color: #1f1f1f;
 }
 
 .main--header_text {
   padding-top: 20px;
   text-align: center;
+  color: #010b13;
+  font-size: xx-large;
+  font-family: 'Pacifico';
 }
 
 .main--header_quote {
@@ -79,7 +89,7 @@
   grid-column: 1/1;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid black;
+  border: 2px solid #010b13;
   border-radius: 5px;
   margin-left: 10px;
 }
@@ -97,9 +107,10 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+  background-color: rgba(1, 11, 19, 0.6);
+  z-index: 0;
 }
 
 .main--promoblock_01-box-header {
@@ -128,7 +139,7 @@
   grid-column: 3/3;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid black;
+  border: 2px solid #010b13;
   border-radius: 5px;
   margin-right: 10px;
 }
@@ -145,9 +156,9 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+  background-color: rgba(1, 11, 19, 0.6);
   border-radius: 3px;
 }
 
@@ -163,9 +174,10 @@
 }
 
 .cardnav {
-  background-image: url(/assets/pizza05.jpg);
+  background-image: url(/assets/home-pizza-menu.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 80vw;
 }
 
@@ -175,11 +187,11 @@
   top: 50%;
   height: 150px;
   width: 55vw;
-  background-color: red;
+  background-color: #ce0000;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
 }
 
 .cardnav_card--list {
@@ -194,7 +206,7 @@
 }
 
 .cardnav_card--list-item a {
-  color: white;
+  color: #f1f1f1;
   text-decoration: none;
 }
 
@@ -276,7 +288,7 @@
 
 .menu__hero {
   width: 100vw;
-  height: 300px;
+  height: 500px;
   background-image: url(/assets/pizza01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -284,16 +296,12 @@
 
 .menu__quoteblock {
   position: relative;
-  background-color: green;
+  background-color: #FFFa8a;
   padding: 10px;
 }
 
 .menu__quoteblock-quote {
   padding-left: 20px;
-}
-
-.menu__actual--dropdown {
-  background-color: aqua;
 }
 
 .menu__actual--dropdown-input {
@@ -306,7 +314,7 @@
   top: 0;
   width: 100%;
   z-index: 1;
-  visibility: none;
+  opacity: 0;
   cursor: pointer;
   -webkit-transition: height 1s ease-out;
   transition: height 1s ease-out;
@@ -335,12 +343,15 @@
   height: 500px;
 }
 
+.menu__actual--dropdown-items-item {
+  position: relative;
+  width: auto;
+}
+
 .menu__actual--dropdown-items-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  width: 50px;
+  float: right;
+  height: 100px;
+  width: 100px;
   background-color: purple;
 }
 
@@ -362,7 +373,6 @@
 #appetizerID:not(:checked) ~ .appbox {
   position: absolute;
   height: 100%;
-  background-color: aqua;
 }
 
 #mainID:checked ~ ul {
@@ -399,17 +409,49 @@
   display: -ms-grid;
   display: grid;
   position: fixed;
-  -ms-grid-columns: 100px 120px 3fr;
-      grid-template-columns: 100px 120px 3fr;
+  -ms-grid-columns: 100px 3fr 120px;
+      grid-template-columns: 100px 3fr 120px;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100px;
   background-color: #dba24a;
+  z-index: 10;
 }
 
 .navbar__checkbox {
   display: none;
+}
+
+.navbar__contact--text {
+  position: relative;
+  color: #f1f1f1;
+  font-family: 'Pacifico';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.navbar__contact a {
+  position: relative;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: large;
+  font-family: 'Pacifico';
+}
+
+.navbar__background {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#dba24a, #e12301);
+  z-index: 1000;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navbar__button {
@@ -420,22 +462,78 @@
   z-index: 2000;
 }
 
-.navbar--nav {
-  display: inline-block;
+.navbar__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navbar__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
   width: 100%;
-  height: 100px;
-  background: blue;
-  aspect-ratio: 1;
+}
+
+.navbar__item {
+  margin: 10px;
+  background-color: #dba24a;
+}
+
+.navbar__link:link, .navbar__link:visited {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 10px 30px;
+  color: #f1f1f1;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f1f1f1 50%);
+  background-size: 220%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.navbar__link:link span, .navbar__link:visited span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.navbar__link:hover, .navbar__link:active {
+  background-position: 100%;
+  color: #e12301;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+
+.navbar__checkbox:checked ~ .navbar__background {
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+
+.navbar__checkbox:checked ~ .navbar__nav {
+  opacity: 1;
+  width: 100%;
 }
 
 .navbar__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 50px;
 }
 
 .navbar__icon, .navbar__icon::before, .navbar__icon::after {
-  width: 3rem;
-  height: 2px;
+  width: 50px;
+  height: 3px;
   background-color: #0f0f0f;
   display: inline-block;
 }
@@ -443,7 +541,7 @@
 .navbar__icon::before, .navbar__icon::after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -480,33 +578,14 @@
           transform: rotate(-135deg);
 }
 
-.navbar--logo {
-  position: relative;
+.navbar__logo {
   display: inline-block;
+  right: 0;
+  height: 100px;
+  width: 120px;
   background-image: url(../../assets/opplogo.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.navbar--contact {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-.navbar--contact-info {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding-right: 20px;
-  color: white;
-}
-
-.navbar--contact-info-phone {
-  text-decoration: none;
-  font-weight: bolder;
-  color: white;
 }
 
 .location {
@@ -514,7 +593,8 @@
   width: 100vw;
   height: 100%;
   padding: 10px 0 10px 0;
-  background-color: #1f1f1f;
+  background-color: #e12301;
+  color: #f1f1f1;
 }
 
 .location_header {
@@ -535,5 +615,31 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 10px 0 10px 0;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 100vw;
+  background-color: #8a6a61;
+}
+
+.footer__list {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+
+.footer__list--item {
+  display: inline-block;
+}
+
+.footer__list--item-link:link, .footer__list--item-link:visited {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 0 2px;
 }
 /*# sourceMappingURL=main.css.map */
