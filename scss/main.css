@@ -42,7 +42,7 @@
 }
 
 .main--promo {
-  display: sticky;
+  position: relative;
   width: 100vw;
   height: auto;
   padding-bottom: 10px;
@@ -50,8 +50,8 @@
   background-size: 400% 400%;
   -webkit-animation: gradient 60s ease infinite;
           animation: gradient 60s ease infinite;
-  -webkit-box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
-          box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+  -webkit-box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
 }
 
 .main--header {
@@ -132,6 +132,20 @@
   grid-auto-rows: minmax(150px, 1fr);
 }
 
+.main--promoblock_02-extra {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .main--promoblock_02-extra {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, 1fr);
+  }
+}
+
 .main--promoblock_02-img {
   display: inline-block;
   background-image: url(/assets/pizza02.jpg);
@@ -139,6 +153,7 @@
   grid-column: 3/3;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border: 2px solid #010b13;
   border-radius: 5px;
   margin-right: 10px;
@@ -194,6 +209,13 @@
           box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
 }
 
+@media only screen and (min-width: 600px) {
+  .cardnav_card {
+    height: 300px;
+    width: 40vw;
+  }
+}
+
 .cardnav_card--list {
   position: relative;
   top: 50%;
@@ -203,6 +225,17 @@
 
 .cardnav_card--list-item {
   padding: 5px 0 5px 8px;
+}
+
+@media only screen and (min-width: 600px) {
+  .cardnav_card--list-item {
+    padding: 10px 0 10px 16px;
+  }
+  .cardnav_card--list-item a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: larger;
+  }
 }
 
 .cardnav_card--list-item a {
@@ -264,23 +297,37 @@
 }
 
 .about__mission {
-  padding: 10px;
+  background-image: url(../../assets/pizza06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__mission--box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(219, 162, 74, 0.85);
 }
 
 .about__mission--title {
   text-align: center;
   margin-bottom: 5px;
+  color: #010b13;
+}
+
+.about__mission--statement-text {
+  padding: 10px 15px 10px 15px;
+  color: #010b13;
 }
 
 .about__video--clip {
-  background-color: aquamarine;
   padding: 10px;
 }
 
 .about__video--clip-frame {
   position: relative;
-  width: 304px;
-  height: 171px;
+  width: 100vw;
+  height: 56vw;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -316,8 +363,6 @@
   z-index: 1;
   opacity: 0;
   cursor: pointer;
-  -webkit-transition: height 1s ease-out;
-  transition: height 1s ease-out;
 }
 
 .menu__actual--dropdown-input input ~ ul {
@@ -325,15 +370,41 @@
   overflow: hidden;
 }
 
+.menu__actual--dropdown-appi-box {
+  background-image: url("../../assets/menu-appi-aleisha-kalina.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__actual--dropdown-main-box {
+  background-image: url("../../assets/menu-maincourse-rob-wicks.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__actual--dropdown-dessert-box {
+  background-image: url("../../assets/menu-dessert-pushpakdsilva.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__actual--dropdown-drinks-box {
+  background-image: url("../../assets/menu-drinks-noattribute.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .menu__actual--dropdown-type1 {
-  background-color: #dba24a;
+  background-color: rgba(219, 162, 74, 0.8);
   padding: 10px;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
 }
 
 .menu__actual--dropdown-type2 {
-  background-color: #e12301;
+  background-color: rgba(225, 35, 1, 0.8);
   padding: 10px;
 }
 
@@ -497,7 +568,6 @@
   padding: 10px 30px;
   color: #f1f1f1;
   text-decoration: none;
-  text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f1f1f1 50%);
   background-size: 220%;
   -webkit-transition: all .4s;
@@ -592,9 +662,14 @@
   display: block;
   width: 100vw;
   height: 100%;
-  padding: 10px 0 10px 0;
-  background-color: #e12301;
+  background-image: url("../../assets/location-bg-marialaura.png");
   color: #f1f1f1;
+}
+
+.location__box {
+  background-color: rgba(225, 35, 1, 0.9);
+  height: 100%;
+  padding: 10px 0 10px 0;
 }
 
 .location_header {

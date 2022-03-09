@@ -31,7 +31,7 @@
         &--profile {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-           
+      
          
             &-img {
                 grid-template-columns: 1/2;
@@ -56,29 +56,43 @@
     }
 
     &__mission {
-        padding: 10px;
+        
+        background-image: url(../../assets/pizza06.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        &--box {
+         
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color-orange, .85);
+        }
+       
         &--title {
             text-align: center;
             margin-bottom: 5px;
+            color: $color-black;
         }
 
         &--statement {
 
-            &--text {
-                
+            &-text {
+                padding: 10px 15px 10px 15px; 
+                color: $color-black;
             }
         }
     }
 
     &__video {
         &--clip {
-          background-color: aquamarine;
+
           padding: 10px;
 
             &-frame {
                 position: relative;
-                width: 304px;
-                height: 171px;
+                width: 100vw;
+                height: 56vw;
                 left: 50%;
                 transform: translateX(-50%);
             }

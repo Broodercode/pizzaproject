@@ -1,0 +1,7 @@
+texturize backgrounds (location (465px), menu (450px), mission statement)
+finish background (about)
+about hero size
+contact phone number
+photos on main page
+photos on about page
+mixins :(

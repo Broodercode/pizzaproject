@@ -25,13 +25,11 @@
   }
 
   &__actual {
-
   
     
     &--dropdown {
 
-    
-    
+   
       &-input {
         position: relative;
        
@@ -43,7 +41,6 @@
           z-index: 1;
           opacity: 0;
           cursor: pointer;
-          transition: height 1s ease-out ;
      
 
           & ~ul {
@@ -53,15 +50,41 @@
           }
         }
       }
+
+      &-appi-box {
+          background-image: url("../../assets/menu-appi-aleisha-kalina.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      
+      }
+      &-main-box {
+          background-image: url("../../assets/menu-maincourse-rob-wicks.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      &-dessert-box {
+          background-image: url("../../assets/menu-dessert-pushpakdsilva.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      &-drinks-box {
+          background-image: url("../../assets/menu-drinks-noattribute.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
       &-type1 {
-        background-color: #dba24a;
+        background-color: rgba($color-orange, .8);
         padding: 10px;
+    
         
-            transition: all 1s ease-out;
-           
+
       }
       &-type2 {
-        background-color: #e12301;
+        background-color: rgba($color-orange-dark, .8);
         padding: 10px;
       }
 
@@ -95,18 +118,20 @@
     ~ul {
         position: absolute;
         height: 0%;
-        
+    
     }
 
     ~.appbox {
         position: absolute;
         height: 0%;
+        
     }
 
 }
 #appetizerID:not(:checked) {
   position: absolute;
   height: 100%;
+  
   ~.appbox {
     position: absolute;
     height: 100%;
