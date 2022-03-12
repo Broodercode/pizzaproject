@@ -1,34 +1,66 @@
 .menu {
   &__hero {
+  
+    display: block;
     width: 100vw;
     height: 500px;
-    background-image: url(/assets/pizza01.jpg);
+    background-image: url('../../assets/menu-hero-unattributed.png');
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+    z-index: 2;
+
+    @media only screen and (min-width: 1024px) {
+      position: relative;
+      height: 650px;
+      clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%);
+     
+  }
+    
   }
 
   &__quoteblock {
-      position: relative;
-
-      background-color: $color-yellow;
-        
-      padding: 10px;
       
+      background-image: radial-gradient($color-orange, $color-orange-dark);
+      margin-top: -100px;
+      padding: 120px 10px 50px 10px;
+      z-index: 1;
+      
+      @media only screen and (min-width: 1024px) {
+        position: relative;
+        font-size: x-large;
+        left: 50%;
+        transform: translateX(-50%);
+   
+    }
+     
+    
+    
     &-title {
-    
-    
+    position: relative;
+      text-align: center;
     }
 
     &-quote {
+      position: relative;
        padding-left: 20px;
+       width: 70vw;
+       left: 50%;
+       transform: translateX(-50%);
     }
   }
 
   &__actual {
-  
+    @media only screen and (min-width: 1024px) {
+display: none;
+ 
+  }
     
     &--dropdown {
 
+
+      
    
       &-input {
         position: relative;
@@ -41,8 +73,8 @@
           z-index: 1;
           opacity: 0;
           cursor: pointer;
-     
-
+          height: 100%;
+   
           & ~ul {
             height: 100%;
             overflow: hidden;
@@ -56,7 +88,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-      
+       
       }
       &-main-box {
           background-image: url("../../assets/menu-maincourse-rob-wicks.png");
@@ -80,7 +112,7 @@
         background-color: rgba($color-orange, .8);
         padding: 10px;
     
-        
+     
 
       }
       &-type2 {
@@ -97,6 +129,7 @@
         &-item {
           position: relative;
           width: auto;
+          padding-top: 5px;
         }
         
         &-img {
@@ -106,12 +139,88 @@
             height: 100px;
             width: 100px;
             background-color: purple;
+            overflow: hidden;
+            border: 2px solid $color-red;
+            border-radius: 5px;
         }
       }
 
    
     }
   }
+
+ &__secondary {
+   position: relative;
+   width: 100vw;
+   height: 100%;
+   background-image: url('../../assets/pizza-menu-kama-tulkibayeva.jpg');
+   background-image: linear-gradient(rgba($color-orange-dark, .6),rgba($color-orange, .6)), url('../../assets/pizza-menu-kama-tulkibayeva.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   padding: 20px 0;
+
+   
+   @media only screen and (max-width: 1023px) {
+    display: none;
+     
+      }
+
+   &--cat {
+    display: block;
+    margin: 0 15vw;
+    background-color: rgba($color-black, .8);
+    border-bottom: 5px solid black;
+    border-radius: 5px;
+    
+
+    &-header {
+      text-align: center;
+      color: $color-white;
+      font-size: x-large;
+      padding: 20px 0;
+      & > h1 {
+        font-family: 'Pacifico';
+      }
+    }
+    &-body {
+      display: block;
+    
+      height: 250px;
+      color: $color-white;
+      &-header {
+        padding: 10px;
+        
+        > h2 {
+          font-family: 'Pacifico';
+        }
+      }
+      &-img {
+        position: relative;
+        
+        border: 2px solid $color-red;
+       float: left;
+        margin: 0 20px;
+        overflow: hidden;
+
+        >img {
+          transform: scale(1.05);
+          
+        }
+      }
+      &-text {
+        display: inline;
+        position: relative;
+        font-size: x-large;
+        vertical-align: middle;
+     
+        
+    }
+
+
+   }
+ }
 }
 
 #appetizerID:checked {
@@ -124,18 +233,19 @@
     ~.appbox {
         position: absolute;
         height: 0%;
-        
+      
     }
 
+}
 }
 #appetizerID:not(:checked) {
   position: absolute;
   height: 100%;
-  
+ 
   ~.appbox {
-    position: absolute;
-    height: 100%;
-  
+   
+
+
 }
 }
 #mainID:checked ~ ul {
@@ -162,3 +272,4 @@
   position: absolute;
   height: 100%;
 }
+

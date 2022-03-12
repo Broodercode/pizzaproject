@@ -18,14 +18,42 @@
     position: relative;
     width: 100vw;
     height: 500px;
-    background-image: url(/assets/hero-small-pranjall-kumar.png);
+    background-image: url('../../assets/home-hero.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+
+    @media only screen and (min-width: 1024px) {
+        height: 75vh;
+    }
     
+    &-text {
+        position: relative;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: x-large;
+        color: $color-white;
+        background-color: rgba($color-black, .4);
+
+        @media only screen and (min-width: 1024px) {
+            width: 75vh;
+        }
+    }
 }
 
 .main {
+    position: relative;
+    
+
+
+    &--bg {
+        background-image: linear-gradient(rgba($color-orange, .6),rgba($color-orange-dark, .6)), url('../../assets/pizza-menu-kama-tulkibayeva.jpg');
+        background-position: center;
+    }
     &--promo {
         position: relative;
         width: 100vw;
@@ -35,6 +63,12 @@
         background-size: 400% 400%;
         animation: gradient 60s ease infinite;
         box-shadow: 5px 5px 2px 1px rgba($color-black, .2);
+
+        @media only screen and (min-width: 1024px) {
+          width: 65vw;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       
     }
 
@@ -67,16 +101,34 @@
         padding-bottom: 10px;
     
         
-        &-img {
+        &-imgbox {
+            position: relative;
             display: inline-block;
-        background-image: url(/assets/pizza02.jpg);
+            
             grid-column: 1/1;
-        background-repeat: no-repeat;
-        background-size: cover;
     
+            height: 150px;
+        
         border: 2px solid $color-black;
         border-radius: 5px;
         margin-left: 10px;
+            overflow: hidden;
+
+            @media only screen and (min-width: 1024px) {
+                height: 250px;
+                margin-left: 30px;
+              }
+            
+        &-img {
+            position: relative;
+            left: 25%;
+            transform: translateX(-25%);
+           
+            @media only screen and (min-width: 1024px) {
+            transform: scale(2.5);    
+            
+              }
+        }
         }
     
         &-box {
@@ -110,6 +162,39 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(150px, 1fr);
         
+        &-imgbox {
+            position: relative;
+            display: inline-block;
+            
+            grid-column: 3/4;
+    
+            height: 150px;
+        
+        border: 2px solid $color-black;
+        border-radius: 5px;
+        margin-right: 10px;
+            overflow: hidden;
+            @media only screen and (min-width: 1024px) {
+                height: 250px;
+                margin-right: 30px;
+              }
+        &-img {
+            position: relative;
+            right: 25%;
+            transform: translateX(-25%);
+          
+            @media only screen and (min-width: 600px) {
+                right: 0;
+                transform: translateX(0);
+            }
+        
+            @media only screen and (min-width: 1024px) {
+                transform: scale(2.5);    
+                
+                  }
+        }
+        }
+        
         &-extra {
             display: none;
 
@@ -121,17 +206,7 @@
     }
         }
 
-        &-img {
-            display: inline-block;
-        background-image: url(/assets/pizza02.jpg);
-            grid-column: 3/3;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border: 2px solid $color-black;
-        border-radius: 5px;
-        margin-right: 10px;
-        }
+
         &-box {
             position: relative;
             display: inline-block;
@@ -162,11 +237,17 @@
 }
 
 .cardnav {
-    background-image: url(/assets/home-pizza-menu.png);
+    background-image: url('/assets/home-pizza-menu.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 80vw;
+
+    @media only screen and (min-width: 1024px)
+    {
+        height: 80vh;
+    }
+   
     &_card {
     position: relative;
     display: block;
@@ -181,6 +262,7 @@
         height: 300px;
         width: 40vw;
     }
+
   
     &--list{
         position: relative;
@@ -189,7 +271,7 @@
 
         &-item {
             padding: 5px 0 5px 8px;
-
+        
               @media only screen and (min-width: 600px)
     {
        padding: 10px 0 10px 16px;
@@ -204,7 +286,7 @@
             a {
                 color: $color-white;
                 text-decoration: none;
-              
+                font-size: small;
             }
         }
    

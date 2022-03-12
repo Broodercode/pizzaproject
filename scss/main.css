@@ -35,10 +35,46 @@
   position: relative;
   width: 100vw;
   height: 500px;
-  background-image: url(/assets/hero-small-pranjall-kumar.png);
+  background-image: url("../../assets/home-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    height: 75vh;
+  }
+}
+
+.hero-text {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: x-large;
+  color: #f1f1f1;
+  background-color: rgba(1, 11, 19, 0.4);
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-text {
+    width: 75vh;
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.main--bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 162, 74, 0.6)), to(rgba(225, 35, 1, 0.6))), url("../../assets/pizza-menu-kama-tulkibayeva.jpg");
+  background-image: linear-gradient(rgba(219, 162, 74, 0.6), rgba(225, 35, 1, 0.6)), url("../../assets/pizza-menu-kama-tulkibayeva.jpg");
+  background-position: center;
 }
 
 .main--promo {
@@ -52,6 +88,15 @@
           animation: gradient 60s ease infinite;
   -webkit-box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
           box-shadow: 5px 5px 2px 1px rgba(1, 11, 19, 0.2);
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--promo {
+    width: 65vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .main--header {
@@ -82,16 +127,37 @@
   padding-bottom: 10px;
 }
 
-.main--promoblock_01-img {
+.main--promoblock_01-imgbox {
+  position: relative;
   display: inline-block;
-  background-image: url(/assets/pizza02.jpg);
   -ms-grid-column: 1;
   grid-column: 1/1;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 150px;
   border: 2px solid #010b13;
   border-radius: 5px;
   margin-left: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--promoblock_01-imgbox {
+    height: 250px;
+    margin-left: 30px;
+  }
+}
+
+.main--promoblock_01-imgbox-img {
+  position: relative;
+  left: 25%;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--promoblock_01-imgbox-img {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
 }
 
 .main--promoblock_01-box {
@@ -132,6 +198,48 @@
   grid-auto-rows: minmax(150px, 1fr);
 }
 
+.main--promoblock_02-imgbox {
+  position: relative;
+  display: inline-block;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  height: 150px;
+  border: 2px solid #010b13;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--promoblock_02-imgbox {
+    height: 250px;
+    margin-right: 30px;
+  }
+}
+
+.main--promoblock_02-imgbox-img {
+  position: relative;
+  right: 25%;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+@media only screen and (min-width: 600px) {
+  .main--promoblock_02-imgbox-img {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--promoblock_02-imgbox-img {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+}
+
 .main--promoblock_02-extra {
   display: none;
 }
@@ -144,19 +252,6 @@
         grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(150px, 1fr);
   }
-}
-
-.main--promoblock_02-img {
-  display: inline-block;
-  background-image: url(/assets/pizza02.jpg);
-  -ms-grid-column: 3;
-  grid-column: 3/3;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #010b13;
-  border-radius: 5px;
-  margin-right: 10px;
 }
 
 .main--promoblock_02-box {
@@ -189,11 +284,17 @@
 }
 
 .cardnav {
-  background-image: url(/assets/home-pizza-menu.png);
+  background-image: url("/assets/home-pizza-menu.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 80vw;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardnav {
+    height: 80vh;
+  }
 }
 
 .cardnav_card {
@@ -241,36 +342,59 @@
 .cardnav_card--list-item a {
   color: #f1f1f1;
   text-decoration: none;
+  font-size: small;
 }
 
 .about__hero {
   display: block;
   width: 100vw;
-  height: 300px;
-  background-image: url(../../assets/pizza04.jpg);
+  height: 500px;
+  background-image: url("../../assets/about-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
 }
 
 .about__promo {
-  padding: 10px;
-  background-color: purple;
+  margin-top: -100px;
+  padding: 120px 10px 50px 10px;
+  background-image: radial-gradient(#dba24a, #e12301);
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__promo {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
 }
 
 .about__promo--header {
   position: relative;
   display: block;
-  background-color: gold;
 }
 
 .about__promo--header-title {
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .about__promo--header-title {
+    font-size: x-large;
+  }
+}
+
 .about__promo--header-text {
   text-align: center;
   vertical-align: middle;
   padding: 5px 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__promo--header-text {
+    font-size: x-large;
+    padding-bottom: 20px;
+  }
 }
 
 .about__promo--profile {
@@ -281,19 +405,41 @@
 }
 
 .about__promo--profile-img {
-  -ms-grid-columns: 1/2;
-      grid-template-columns: 1/2;
   height: 150px;
   background-image: url(/assets/pizza06.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border: 2px solid #010b13;
+  border-radius: 5px;
 }
 
-.about__promo--profile-text {
-  -ms-grid-columns: 2/3;
-      grid-template-columns: 2/3;
-  padding: 15px 5px 5px 5px;
-  background-color: aqua;
+@media only screen and (min-width: 1024px) {
+  .about__promo--profile-img {
+    height: 300px;
+  }
+}
+
+.about__promo--profile-textbox {
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__promo--profile-textbox {
+    padding-left: 20px;
+  }
+}
+
+.about__promo--profile-textbox-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__promo--profile-textbox-text {
+    font-size: x-large;
+  }
 }
 
 .about__mission {
@@ -303,6 +449,7 @@
 }
 
 .about__mission--box {
+  padding-top: 10px;
   position: relative;
   height: 100%;
   width: 100%;
@@ -315,9 +462,26 @@
   color: #010b13;
 }
 
+@media only screen and (min-width: 1024px) {
+  .about__mission--title {
+    font-size: x-large;
+  }
+}
+
 .about__mission--statement-text {
   padding: 10px 15px 10px 15px;
   color: #010b13;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__mission--statement-text {
+    position: relative;
+    font-size: x-large;
+    width: 70vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .about__video--clip {
@@ -333,22 +497,70 @@
           transform: translateX(-50%);
 }
 
+@media only screen and (min-width: 1024px) {
+  .about__video--clip-frame {
+    width: 70vw;
+    height: 39vw;
+  }
+}
+
 .menu__hero {
+  display: block;
   width: 100vw;
   height: 500px;
-  background-image: url(/assets/pizza01.jpg);
+  background-image: url("../../assets/menu-hero-unattributed.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu__hero {
+    position: relative;
+    height: 650px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%);
+  }
 }
 
 .menu__quoteblock {
+  background-image: radial-gradient(#dba24a, #e12301);
+  margin-top: -100px;
+  padding: 120px 10px 50px 10px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu__quoteblock {
+    position: relative;
+    font-size: x-large;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.menu__quoteblock-title {
   position: relative;
-  background-color: #FFFa8a;
-  padding: 10px;
+  text-align: center;
 }
 
 .menu__quoteblock-quote {
+  position: relative;
   padding-left: 20px;
+  width: 70vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu__actual {
+    display: none;
+  }
 }
 
 .menu__actual--dropdown-input {
@@ -363,6 +575,7 @@
   z-index: 1;
   opacity: 0;
   cursor: pointer;
+  height: 100%;
 }
 
 .menu__actual--dropdown-input input ~ ul {
@@ -417,6 +630,7 @@
 .menu__actual--dropdown-items-item {
   position: relative;
   width: auto;
+  padding-top: 5px;
 }
 
 .menu__actual--dropdown-items-img {
@@ -424,24 +638,95 @@
   height: 100px;
   width: 100px;
   background-color: purple;
+  overflow: hidden;
+  border: 2px solid #ce0000;
+  border-radius: 5px;
 }
 
-#appetizerID:checked ~ ul {
+.menu__secondary {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-image: url("../../assets/pizza-menu-kama-tulkibayeva.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 35, 1, 0.6)), to(rgba(219, 162, 74, 0.6))), url("../../assets/pizza-menu-kama-tulkibayeva.jpg");
+  background-image: linear-gradient(rgba(225, 35, 1, 0.6), rgba(219, 162, 74, 0.6)), url("../../assets/pizza-menu-kama-tulkibayeva.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .menu__secondary {
+    display: none;
+  }
+}
+
+.menu__secondary--cat {
+  display: block;
+  margin: 0 15vw;
+  background-color: rgba(1, 11, 19, 0.8);
+  border-bottom: 5px solid black;
+  border-radius: 5px;
+}
+
+.menu__secondary--cat-header {
+  text-align: center;
+  color: #f1f1f1;
+  font-size: x-large;
+  padding: 20px 0;
+}
+
+.menu__secondary--cat-header > h1 {
+  font-family: 'Pacifico';
+}
+
+.menu__secondary--cat-body {
+  display: block;
+  height: 250px;
+  color: #f1f1f1;
+}
+
+.menu__secondary--cat-body-header {
+  padding: 10px;
+}
+
+.menu__secondary--cat-body-header > h2 {
+  font-family: 'Pacifico';
+}
+
+.menu__secondary--cat-body-img {
+  position: relative;
+  border: 2px solid #ce0000;
+  float: left;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.menu__secondary--cat-body-img > img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.menu__secondary--cat-body-text {
+  display: inline;
+  position: relative;
+  font-size: x-large;
+  vertical-align: middle;
+}
+
+.menu #appetizerID:checked ~ ul {
   position: absolute;
   height: 0%;
 }
 
-#appetizerID:checked ~ .appbox {
+.menu #appetizerID:checked ~ .appbox {
   position: absolute;
   height: 0%;
 }
 
 #appetizerID:not(:checked) {
-  position: absolute;
-  height: 100%;
-}
-
-#appetizerID:not(:checked) ~ .appbox {
   position: absolute;
   height: 100%;
 }
@@ -486,28 +771,35 @@
   left: 0;
   width: 100vw;
   height: 100px;
-  background-color: #dba24a;
+  background-color: #e12301;
   z-index: 10;
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
+          box-shadow: 3px 3px 2px 1px rgba(1, 11, 19, 0.2);
 }
 
 .navbar__checkbox {
   display: none;
 }
 
-.navbar__contact--text {
+.navbar__contact--box {
   position: relative;
-  color: #f1f1f1;
-  font-family: 'Pacifico';
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  color: #f1f1f1;
+  font-family: 'Pacifico';
+  text-align: right;
+  padding-right: 5px;
+}
+
+.navbar__contact--text {
+  color: #f1f1f1;
+  font-family: 'Pacifico';
 }
 
 .navbar__contact a {
-  position: relative;
   text-decoration: none;
   color: #f1f1f1;
-  font-size: large;
   font-family: 'Pacifico';
 }
 
@@ -517,7 +809,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: radial-gradient(#dba24a, #e12301);
+  background-image: -webkit-gradient(linear, left top, right top, from(#dba24a), to(#e12301));
+  background-image: linear-gradient(90deg, #dba24a, #e12301);
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -558,7 +851,6 @@
 
 .navbar__item {
   margin: 10px;
-  background-color: #dba24a;
 }
 
 .navbar__link:link, .navbar__link:visited {
@@ -676,9 +968,21 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .location_header {
+    font-size: x-large;
+  }
+}
+
 .location_header-quote {
   padding-left: 25px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .location_header-quote {
+    font-size: x-large;
+  }
 }
 
 .location_map {
@@ -690,6 +994,14 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .location_map {
+    height: 700px;
+    width: 55vw;
+    padding: 20px 0 20px 0;
+  }
 }
 
 .footer {

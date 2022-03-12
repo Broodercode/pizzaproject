@@ -3,53 +3,91 @@
     &__hero {
         display: block;
         width: 100vw;
-        height: 300px;
-        background-image: url(../../assets/pizza04.jpg);
+        height: 500px;
+        background-image: url("../../assets/about-hero.png");
         background-repeat: no-repeat;
         background-size:cover;
+        clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
     }
     
     &__promo {
-        padding: 10px;
-        background-color: purple;
+        margin-top: -100px;
+        padding: 120px 10px 50px 10px;
+        background-image: radial-gradient($color-orange, $color-orange-dark);
+      
+        @media only screen and (min-width: 1024px) {
+            
+            padding-left: 20vw;
+            padding-right: 20vw;
+            
+          }
         &--header {
             
            position: relative;
            display: block;
-           background-color: gold;
+        
             &-title {
            text-align: center;
+           @media only screen and (min-width: 1024px) {
+            
+            font-size: x-large;
+              
+            }
             }
 
             &-text {
         text-align: center;
         vertical-align: middle;
         padding: 5px 10px;
+        @media only screen and (min-width: 1024px) {
+            
+            font-size: x-large;
+              padding-bottom: 20px;
+            }
             }
         }
 
         &--profile {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-      
+            
          
             &-img {
-                grid-template-columns: 1/2;
+         
          
                 
                 height: 150px;
                 background-image: url(/assets/pizza06.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
-                
+                border: 2px solid $color-black;
+                border-radius: 5px;
+                @media only screen and (min-width: 1024px) {
+            
+                  height: 300px;
+                    
+                  }
             }
 
-            &-text {
-      
-                grid-template-columns: 2/3;
-                padding: 15px 5px 5px 5px;
-         
-                background-color: aqua;
+            &-textbox {
+                
+               
+                padding-left: 10px;
+                @media only screen and (min-width: 1024px) {
+            
+                    padding-left: 20px;
+                      
+                    }
+                &-text {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @media only screen and (min-width: 1024px) {
+            
+                        font-size: x-large;
+                          
+                        }
+                }
              
             }
         }
@@ -62,24 +100,38 @@
         background-repeat: no-repeat;
         
         &--box {
-         
+            padding-top: 10px;
             position: relative;
             height: 100%;
             width: 100%;
             background-color: rgba($color-orange, .85);
+
+        
         }
        
         &--title {
             text-align: center;
             margin-bottom: 5px;
             color: $color-black;
+            @media only screen and (min-width: 1024px) {
+            
+                font-size: x-large;
+                  
+                }
         }
 
         &--statement {
-
+        
             &-text {
                 padding: 10px 15px 10px 15px; 
                 color: $color-black;
+                @media only screen and (min-width: 1024px) {
+                    position: relative;
+                    font-size: x-large;
+                    width: 70vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    }
             }
         }
     }
@@ -87,7 +139,7 @@
     &__video {
         &--clip {
 
-          padding: 10px;
+          padding: 10px ;
 
             &-frame {
                 position: relative;
@@ -95,6 +147,12 @@
                 height: 56vw;
                 left: 50%;
                 transform: translateX(-50%);
+           
+                @media only screen and (min-width: 1024px) {
+             
+                    width: 70vw;
+                    height: 39vw;
+                    }
             }
         }
     }

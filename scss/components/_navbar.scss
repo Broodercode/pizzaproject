@@ -6,28 +6,38 @@
     left: 0;
     width: 100vw; 
     height: 100px;
-    background-color: #dba24a;
+    background-color: $color-orange-dark;
     z-index: 10;
+    box-shadow: 3px 3px 2px 1px rgba($color-black, .2);
     
     &__checkbox{ 
         display: none;
     }
 
     &__contact {
-        &--text {
+
+        &--box {
             position: relative;
-            color: $color-white;
-            font-family: 'Pacifico';
             top: 50%;
             transform: translateY(-50%);
+            color: $color-white;
+            font-family: 'Pacifico';
+            text-align: right;
+            padding-right: 5px;
+        }
+        
+        &--text {
+   
+            color: $color-white;
+            font-family: 'Pacifico';
+       
           
         }
        a {
-           position: relative;
+      
            text-decoration: none;
            color: $color-white;
-           font-size: large;
-           font-family: 'Pacifico';
+           font-family: 'Pacifico'
         
          
        }
@@ -40,7 +50,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-image: radial-gradient($color-orange, $color-orange-dark);
+        background-image: linear-gradient(90deg, $color-orange, $color-orange-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     }
@@ -78,7 +88,7 @@
 
     &__item {
         margin: 10px;
-        background-color: $color-orange;
+        
     }
 
     &__link {
