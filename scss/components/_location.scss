@@ -1,51 +1,46 @@
 .location {
-    display: block;
-    width: 100vw;
+  display: block;
+  width: 100vw;
+  height: 100%;
+
+  background-image: url("../../assets/location-bg-marialaura.png");
+
+  color: $color-white;
+
+  &__box {
+    background-color: rgba($color-orange-dark, 0.9);
     height: 100%;
-  
-    background-image: url("../../assets/location-bg-marialaura.png");
+    padding: 10px 0 10px 0;
 
-    color: $color-white;
-    
-    &__box {
-        background-color: rgba($color-orange-dark, .9);
-        height: 100%;
-        padding: 10px 0 10px 0;
-
-        @media only screen and (min-width: 1024px) {
-            
-           }
-      
+    @media only screen and (min-width: 1024px) {
     }
-    &_header {
-     
- 
-        text-align: center;
-        @media only screen and (min-width: 1024px) {
-         font-size: x-large;
-        }
-        &-quote {
-            
-            text-align: center;
-            @media only screen and (min-width: 1024px) {
-                font-size: x-large;
-               }
-        }
+  }
+  &_header {
+    text-align: center;
+    @media only screen and (min-width: 1024px) {
+      font-size: x-large;
     }
-
-    &_map {
-        position: relative;
-        display: block;
-        width: 80vw;
-        height: 350px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 0 10px 0;
-
-        @media only screen and (min-width: 1024px) {
-            height: 700px;
-            width: 55vw;
-            padding: 20px 0 20px 0;
-        }
+    &-quote {
+      text-align: center;
+      @media only screen and (min-width: 1024px) {
+        font-size: x-large;
+      }
     }
+  }
+
+  &_map {
+    position: relative;
+    display: block;
+    width: 80vw;
+    height: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0 10px 0;
+
+    @media only screen and (min-width: 1024px) {
+      height: 700px;
+      width: 55vw;
+      padding: 20px 0 20px 0;
+    }
+  }
 }
