@@ -1,390 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/main.css">
-    <title>OKPizza Menu</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="pizza, italian food, dine-in, pizza calgary, pizza calgary near me, italian restaurant near me"
+    />
+    <meta name="description" content="The Best Italian Pizza Restaurant." />
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favi-android-chrome-512x512.png"
+    />
+    <title>OK Pizza Menu</title>
+  </head>
+  <body>
     <div class="navbar">
-        <input type="checkbox" class="navbar__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navbar__button">
-           <span class="navbar__icon">&nbsp;</span>
-       </label>
-   
-   
-   
-       <div class="navbar__background">&nbsp;</div>
-   <nav class="navbar__nav">
-   <ul class="navbar__list">
-       <li class="navbar__item"><a href="/index.html" class="navbar__link">HOME</a></li>
-       <li class="navbar__item"><a href="/menu.html" class="navbar__link">MENU</a></li>
-       <li class="navbar__item"><a href="/about.html" class="navbar__link">LOCATION</a></li>
-   </ul>
-   </nav>
-   <div class="navbar__contact">
-    <div class="navbar__contact--box">
-     <a href="tel:+1777-777-7777"> <p class="navbar__contact--text">
-         Call Us
-     </p> 777-777-7777</a></div>
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navbar__button">
+        <span class="navbar__icon">&nbsp;</span>
+      </label>
+
+      <!-- NAVBAR -->
+      <div class="navbar__background">&nbsp;</div>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__link">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/menu.html" class="navbar__link">MENU</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__link">LOCATION</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar__contact">
+        <div class="navbar__contact--box">
+          <a href="tel:+1777-777-7777">
+            <p class="navbar__contact--text">Call Us</p>
+            777-777-7777</a
+          >
+        </div>
+      </div>
+
+      <div class="navbar__logo"></div>
     </div>
-     
-       <div class="navbar__logo">  </div>
-   
-   
-   
-       </div>
-   
+    <!-- HERO IMAGE -->
     <div class="menu__hero"></div>
     <div class="menu__quoteblock">
-        <div class="menu__quoteblock-title">
-            <h2>Menu</h2>
-        </div>
-        <div class="menu__quoteblock-quote">
-            <h3 class="">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, inventore."</h3>
-        </div>
+      <div class="menu__quoteblock-title">
+        <h2>Menu</h2>
+      </div>
+      <div class="menu__quoteblock-quote">
+        <h3 class="">
+          "Okotoks Pizza nods to classic osterias found throughout Italy, where
+          traditional recipes and old-world cooking techniques transcend trends
+          and are honoured throughout generations."
+        </h3>
+      </div>
     </div>
+    <!-- MENU <1024PX -->
     <div class="menu__actual">
-        <ul class="menu__actual--dropdown">
-            <div class="menu__actual--dropdown-appi-box">
+      <ul class="menu__actual--dropdown">
+        <div class="menu__actual--dropdown-appi-box">
+          <li class="menu__actual--dropdown-type1">
+            <div class="menu__actual--dropdown-input">
+              <h2>Appetizers</h2>
+              <input type="checkbox" id="appetizerID" unchecked />
 
-           
-            <li class="menu__actual--dropdown-type1">
-           <div class="menu__actual--dropdown-input">
-               
-            <h2>Appetizers</h2>
-            <input type="checkbox" id="appetizerID" unchecked>
-       
-                <ul class="menu__actual--dropdown-items">
-                    <div class="menu__actual--dropdown-items-img">
-                        <img src="./assets/menu-appi01-aleishakalina.png" alt="Appitizer Image">
-                    </div>
-                        
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <div class="menu__actual--dropdown-items-img">
-                            <img src="./assets/menu-appi02-aleishakalina.png" alt="Appitizer Image">
-                        </div>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-            
-                  
-                        
-                    
-                </ul>
-          
-
+              <ul class="menu__actual--dropdown-items">
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-appi01-aleishakalina.png"
+                    alt="Appitizer Image"
+                  />
                 </div>
-            </div>
-    
-            </li>
-            <div class="menu__actual--dropdown-main-box">
 
-           
-            <li class="menu__actual--dropdown-type2">
-           <div class="menu__actual--dropdown-input">
-            <h2>Main Course</h2>
-                <input type="checkbox" id="mainID" checked>
-         
-                <ul class="menu__actual--dropdown-items">
-                    <div class="menu__actual--dropdown-items-img">
-                        <img src="./assets/menu-main01-rob-wicks.png" alt="Main Course Image">
-                    </div>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <div class="menu__actual--dropdown-items-img">
-                            <img src="./assets/menu-main02-fallontravels.png" alt="Main Course Image">
-                        </div>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-            
-                  
-                        
-                    
-                </ul>
-           </div>
-    
-            </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>SALMON BRUSCHETTA 20.95</h3>
+                  <p>
+                    -crispy potato, citrus aïoli, mustard & onion dressing,
+                    toasted focaccia!
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>CRISPY SHRIMP 19.95</h3>
+                  <p>-lemon, spicy bomba mayo</p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-appi02-aleishakalina.png"
+                    alt="Appitizer Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>MEATBALLS 16.95</h3>
+                  <p>
+                    -four all-beef meatballs, black pepper ricotta, pecorino
+                    romano
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>ARANCINI 11.95</h3>
+                  <p>
+                    -crispy saffron risotto balls stuffed with mozzarella,
+                    tomato passata, parmigiano-reggiano
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
+
+        <div class="menu__actual--dropdown-main-box">
+          <li class="menu__actual--dropdown-type2">
+            <div class="menu__actual--dropdown-input">
+              <h2>Main Course</h2>
+              <input type="checkbox" id="mainID" checked />
+
+              <ul class="menu__actual--dropdown-items">
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-main01-rob-wicks.png"
+                    alt="Main Course Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>MARGHERITA PIZZA 17.95</h3>
+                  <p>
+                    -fior di latte, tomato passata, blistered tomatoes, basil,
+                    olive oil
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>MEAT LOVER PIZZA 25.95</h3>
+                  <p>
+                    -tomato passata, fior di latte, italian sausage, capicola,
+                    pepperoni
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-main02-fallontravels.png"
+                    alt="Main Course Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>LASAGNE 23.95</h3>
+                  <p>
+                    -beef & pancetta ragù, parma ham, tomato béchamel sauce,
+                    mozzarella, parmigiano-reggiano
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>PIMENTO PENNE 16.95</h3>
+                  <p>
+                    -red pepper pasta, rosé sauce, fresh basil,
+                    parmigiano-reggiano
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-item-main03.png"
+                    alt="Main Course Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>MARGHERITA PIZZA 17.95</h3>
+                  <p>
+                    -fior di latte, tomato passata, blistered tomatoes, basil,
+                    olive oil
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>MEAT LOVER PIZZA 25.95</h3>
+                  <p>
+                    -tomato passata, fior di latte, italian sausage, capicola,
+                    pepperoni
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-item-main04.png"
+                    alt="Main Course Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>LASAGNE 23.95</h3>
+                  <p>
+                    -beef & pancetta ragù, parma ham, tomato béchamel sauce,
+                    mozzarella, parmigiano-reggiano
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>PIMENTO PENNE 16.95</h3>
+                  <p>
+                    -red pepper pasta, rosé sauce, fresh basil,
+                    parmigiano-reggiano
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
         </div>
         <div class="menu__actual--dropdown-dessert-box">
+          <li class="menu__actual--dropdown-type1">
+            <div class="menu__actual--dropdown-input">
+              <h2>Desserts</h2>
+              <input type="checkbox" id="dessertsID" checked />
 
-       
-            <li class="menu__actual--dropdown-type1">
-           <div class="menu__actual--dropdown-input">
-            <h2>Desserts</h2>
-                <input type="checkbox" id="dessertsID" checked>
-    
-                <ul class="menu__actual--dropdown-items">
-                    <div class="menu__actual--dropdown-items-img">
-                        <img src="./assets/menu-dessert01-yuliakhebnikov.png" alt="Dessert Image">
-                    </div>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <div class="menu__actual--dropdown-items-img">
-                            <img src="./assets/menu-dessert02-pushpakdsilva.png" alt="Dessert Image">
-                        </div>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                        <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-            
-                  
-                        
-                    
-                </ul>
-           </div>
-    
-            </li>
+              <ul class="menu__actual--dropdown-items">
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-dessert01-yuliakhebnikov.png"
+                    alt="Dessert Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>TIRAMISU 10.95</h3>
+                  <p>-lady fingers, espresso, mascarpone, cocoa</p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>FLOURLESS CHOCOLATE CAKE 10.95</h3>
+                  <p>-hazelnut sabayon</p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-dessert02-pushpakdsilva.png"
+                    alt="Dessert Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>BROOD BROWNIE 10.95</h3>
+                  <p>-way too sweet</p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>RPG LIMIT BREAK 77.77</h3>
+                  <p>-crazy that you are still reading</p>
+                </li>
+              </ul>
+            </div>
+          </li>
         </div>
         <div class="menu__actual--dropdown-drinks-box">
-            <li class="menu__actual--dropdown-type2">
-                <div class="menu__actual--dropdown-input">
-                 <h2>Drinks</h2>
-                     <input type="checkbox" id="drinksID" checked>
-              
-                     <ul class="menu__actual--dropdown-items">
-                         <div class="menu__actual--dropdown-items-img">
-                            <img src="./assets/menu-drinks01-marinazaharkina.png" alt="Drink Image">
-                         </div>
-                             <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                             <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                             <div class="menu__actual--dropdown-items-img">
-                                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-                             </div>
-                             <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                             <li class="menu__actual--dropdown-items-item"><h3>Food Item</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi consequuntur ducimus repudiandae earum ut rerum, harum sapiente perferendis numquam cum, fuga est sed odio!</p></li>
-                 
-                       
-                             
-                         
-                     </ul>
+          <li class="menu__actual--dropdown-type2">
+            <div class="menu__actual--dropdown-input">
+              <h2>Drinks</h2>
+              <input type="checkbox" id="drinksID" checked />
+
+              <ul class="menu__actual--dropdown-items">
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-drinks01-marinazaharkina.png"
+                    alt="Drink Image"
+                  />
                 </div>
-         
-                 </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>JULIET’S FIZZ 15.95</h3>
+                  <p>
+                    romeo’s gin, st-germain, grapefruit & lemon juice, rosemary,
+                    soda, 2oz
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>THAT’S A NOP 15.95</h3>
+                  <p>
+                    -smirnoff vodka, yellow chartreuse, peychaud’s bitters,
+                    chili syrup, lemon juice, egg white, 2.25oz
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img
+                    src="./assets/menu-drinks02-noattribute.png"
+                    alt="Drink Image"
+                  />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>PIMM’S CUP 15.95</h3>
+                  <p>
+                    -pimm’s no. 1, lemon juice, ginger ale, cucumber, seasonal
+                    berries, 2oz
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>ITALIAN MULE 15.95</h3>
+                  <p>
+                    -smirnoff vodka, frangelico, limoncello, ginger beer, lime
+                    juice, 1.75oz
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img src="./assets/menu-item-drink03.png" alt="Drink Image" />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>JULIET’S FIZZ 15.95</h3>
+                  <p>
+                    romeo’s gin, st-germain, grapefruit & lemon juice, rosemary,
+                    soda, 2oz
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>THAT’S A NOP 15.95</h3>
+                  <p>
+                    -smirnoff vodka, yellow chartreuse, peychaud’s bitters,
+                    chili syrup, lemon juice, egg white, 2.25oz
+                  </p>
+                </li>
+                <div class="menu__actual--dropdown-items-img">
+                  <img src="./assets/menu-item-drink04.png" alt="Drink Image" />
+                </div>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>PIMM’S CUP 15.95</h3>
+                  <p>
+                    -pimm’s no. 1, lemon juice, ginger ale, cucumber, seasonal
+                    berries, 2oz
+                  </p>
+                </li>
+                <li class="menu__actual--dropdown-items-item">
+                  <h3>ITALIAN MULE 15.95</h3>
+                  <p>
+                    -smirnoff vodka, frangelico, limoncello, ginger beer, lime
+                    juice, 1.75oz
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
         </div>
- 
-    
-        </ul>
+      </ul>
     </div>
-    <!-- secondary section -->
+    <!-- MENU  > 1024PX -->
     <div class="menu__secondary">
-        <div class="menu__secondary--cat">
-            <div class="menu__secondary--cat-header"><h1>Appetizers</h1></div>
-            <div class="menu__secondary--cat-body">
-           
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-appi01-aleishakalina.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-header"><h2>SMOKED SALMON BRUSCHETTA 20.95</h2></div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                -crispy potato, citrus aïoli, mustard & onion dressing, toasted focaccia
-               </p> 
-            </div>
-           
+      <div class="menu__secondary--cat">
+        <div class="menu__secondary--cat-header"><h1>Appetizers</h1></div>
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-appi01.png" alt="Salmon Brushchetta" />
+          </div>
+          <div class="menu__secondary--cat-body-header">
+            <h2>SALMON BRUSCHETTA 20.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>
+              -crispy potato, citrus aïoli, mustard & onion dressing, toasted
+              focaccia
+            </p>
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-           
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-appi01-aleishakalina.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-header"><h2>CRISPY SHRIMP 19.95</h2></div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                -lemon, spicy bomba mayo
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-img">
+            <img
+              src="./assets/menu-appi02-aleishakalina.png"
+              alt="Crispy Shrimp"
+            />
+          </div>
+          <div class="menu__secondary--cat-body-header">
+            <h2>CRISPY SHRIMP 19.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>-lemon, spicy bomba mayo</p>
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-           
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-appi01-aleishakalina.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-header"><h2>SMOKED SALMON BRUSCHETTA 20.95</h2></div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                -crispy potato, citrus aïoli, mustard & onion dressing, toasted focaccia
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-appi03.png" alt="Meat Balls" />
+          </div>
+          <div class="menu__secondary--cat-body-header">
+            <h2>MEATBALLS 16.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>
+              -four all-beef meatballs, black pepper ricotta, pecorino romano
+            </p>
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-           
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-appi01-aleishakalina.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-header"><h2>SMOKED SALMON BRUSCHETTA 20.95</h2></div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                -crispy potato, citrus aïoli, mustard & onion dressing, toasted focaccia
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-appi04.png" alt="Arancini" />
+          </div>
+          <div class="menu__secondary--cat-body-header">
+            <h2>ARANCINI 11.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>
+              -crispy saffron risotto balls stuffed with mozzarella, tomato
+              passata, parmigiano-reggiano
+            </p>
+          </div>
         </div>
-           
-
+      </div>
+      <div class="menu__secondary--cat">
+        <div class="menu__secondary--cat-header"><h1>Main Course</h1></div>
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>MARGHERITA PIZZA 17.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-main01.png" alt="Margherita Pizza" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>
+              -fior di latte, tomato passata, blistered tomatoes, basil, olive
+              oil
+            </p>
+          </div>
         </div>
-        <div class="menu__secondary--cat">
-            <div class="menu__secondary--cat-header"><h1>Test</h1></div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>MEAT LOVER PIZZA 25.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-main02.png" alt="Meat Lover Pizza" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -tomato passata, fior di latte, italian sausage, capicola, pepperoni
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>LASAGNE 23.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-main03.png" alt="Lasagne" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -beef & pancetta ragù, parma ham, tomato béchamel sauce, mozzarella,
+            parmigiano-reggiano
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>PIMENTO PENNE 16.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-main04.png" alt="Pimento Penne" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -red pepper pasta, rosé sauce, fresh basil, parmigiano-reggiano
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+      </div>
+      <div class="menu__secondary--cat">
+        <div class="menu__secondary--cat-header"><h1>Desserts</h1></div>
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>TIRAMISU 10.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-dess01.png" alt="Tiramisu" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>-lady fingers, espresso, mascarpone, cocoa</p>
+          </div>
         </div>
-
-
-           
-
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>FLOURLESS CHOCOLATE CAKE 10.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-dess02.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">-hazelnut sabayon</div>
         </div>
-        <div class="menu__secondary--cat">
-            <div class="menu__secondary--cat-header"><h1>Test</h1></div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>BROOD BROWNIE 10.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-dess03.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">-way too sweet</div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>RPG LIMIT BREAK 77.77</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-dess04.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -crazy that you are still reading
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+      </div>
+      <div class="menu__secondary--cat">
+        <div class="menu__secondary--cat-header"><h1>Drinks</h1></div>
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>JULIET’S FIZZ 15.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-drink01.png" alt="Juliet's Fizz" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            <p>
+              -romeo’s gin, st-germain, grapefruit & lemon juice, rosemary,
+              soda, 2oz
+            </p>
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>THAT’S A NOP 15.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-drink02.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -smirnoff vodka, yellow chartreuse, peychaud’s bitters, chili syrup,
+            lemon juice, egg white, 2.25oz
+          </div>
         </div>
-
-
-           
-
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>PIMM’S CUP 15.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-drink03.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -pimm’s no. 1, lemon juice, ginger ale, cucumber, seasonal berries,
+            2oz
+          </div>
         </div>
-        <div class="menu__secondary--cat">
-            <div class="menu__secondary--cat-header"><h1>Test</h1></div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-               </p> 
-            </div>
-           
+        <div class="menu__secondary--cat-body">
+          <div class="menu__secondary--cat-body-header">
+            <h2>ITALIAN MULE 15.95</h2>
+          </div>
+          <div class="menu__secondary--cat-body-img">
+            <img src="./assets/menu-item-drink04.png" alt="Drink Image" />
+          </div>
+          <div class="menu__secondary--cat-body-text">
+            -smirnoff vodka, frangelico, limoncello, ginger beer, lime juice,
+            1.75oz
+          </div>
         </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
-        </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
-        </div>
-            <div class="menu__secondary--cat-body">
-            <div class="menu__secondary--cat-body-header"><h2>Header</h2></div>
-            <div class="menu__secondary--cat-body-img">
-                <img src="./assets/menu-drinks02-noattribute.png" alt="Drink Image">
-            </div>
-            <div class="menu__secondary--cat-body-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus maxime voluptatem fuga et molestias illo, id ratione autem nam!
-            </div>
-          
-        </div>
-
-
-           
-
-        </div>
-        
+      </div>
     </div>
-
-<footer>
-    <div class="footer">
+<!-- FOOTER -->
+    <footer>
+      <div class="footer">
         <ul class="footer__list">
-            <li class="footer__list--item"><a href="./index.html" class="footer__list--item-link">HOME</a></li>
-            <li class="footer__list--item"><a href="./menu.html" class="footer__list--item-link">MENU</a></li>
-            <li class="footer__list--item"><a href="./about.html" class="footer__list--item-link">ABOUT</a></li>
-            <li class="footer__list--item"><a href="./about.html" class="footer__list--item-link">CONTACT</a></li>
-            
+          <li class="footer__list--item">
+            <a href="./index.html" class="footer__list--item-link">HOME</a>
+          </li>
+          <li class="footer__list--item">
+            <a href="./menu.html" class="footer__list--item-link">MENU</a>
+          </li>
+          <li class="footer__list--item">
+            <a href="./about.html" class="footer__list--item-link">ABOUT</a>
+          </li>
+          <li class="footer__list--item">
+            <a href="./about.html" class="footer__list--item-link">CONTACT</a>
+          </li>
         </ul>
-    </div>
-</footer>
-</body>
+        <div class="footer__cw">
+          <p>© Okotoks Pizza</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

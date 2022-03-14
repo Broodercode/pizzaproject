@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-
+    
     @media only screen and (min-width: 1024px) {
         height: 75vh;
     }
@@ -53,6 +53,7 @@
     &--bg {
         background-image: linear-gradient(rgba($color-orange, .6),rgba($color-orange-dark, .6)), url('../../assets/pizza-menu-kama-tulkibayeva.jpg');
         background-position: center;
+     
     }
     &--promo {
         position: relative;
@@ -68,6 +69,7 @@
           width: 65vw;
           left: 50%;
           transform: translateX(-50%);
+          
         }
       
     }
@@ -99,7 +101,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(150px, 1fr);
         padding-bottom: 10px;
-    
+        overflow-x: hidden;
         
         &-imgbox {
             position: relative;
